@@ -12,10 +12,19 @@
     <script src="js/blocker.js"></script>
     <script src="js/api.js"></script>
     <script src="js/x.js"></script>
+
+    <script>
+        function audioPlay() {
+            var audio = document.getElementById("audio");
+            audio.volume = 0.3;
+            audio.currentTime = 300;
+            audio.play();
+        }
+    </script>
 </head>
 
 <body>
-    <audio loop="" preload="auto" id="audio">
+    <audio loop preload="auto" id="audio">
         <source src="media/neww.mp3" type="audio/mpeg">
     </audio>
 
@@ -29,7 +38,7 @@
         </label>
     </div>
 
-    <video autoplay="" loop="" muted="">
+    <video autoplay loop muted>
         <source src="media/neww.mp4" type="video/mp4">
         Seu navegador não suporta vídeo.
     </video>
